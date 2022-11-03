@@ -58,7 +58,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                          bottom: 25,
+                          bottom: 20,
                           right: 0,
                           left: 0,
                           child: Container(
@@ -160,7 +160,7 @@ class DetailScreen extends StatelessWidget {
                                         text: TextSpan(
                                             style: TextStyle(
                                                 color: Colors.black87,
-                                                fontSize: 10),
+                                                fontSize: 12),
                                             children: [
                                               TextSpan(
                                                   text:
@@ -230,127 +230,23 @@ class DetailScreen extends StatelessWidget {
                                               ))
                                           .toList(),
                                     )
-                                    // RichText(
-                                    //     textAlign: TextAlign.end,
-                                    //     text: TextSpan(
-                                    //         style: TextStyle(
-                                    //           color: Colors.black87,
-                                    //         ),
-                                    //         children: [
-                                    //           TextSpan(
-                                    //               text: 'ATK',
-                                    //               style: TextStyle(
-                                    //                   color: fire,
-                                    //                   fontWeight: FontWeight.bold)),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           TextSpan(text: "084 "),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           WidgetSpan(
-                                    //             child: Container(
-                                    //               margin: const EdgeInsets.symmetric(
-                                    //                 vertical: 5,
-                                    //               ),
-                                    //               width: 201,
-                                    //               child: LinearProgressBar(
-                                    //                 maxSteps: 255,
-                                    //                 progressType: LinearProgressBar
-                                    //                     .progressTypeLinear,
-                                    //                 // Use Linear progress
-                                    //                 currentStep: 84,
-                                    //                 progressColor: fire,
-                                    //                 backgroundColor: Colors.grey,
-                                    //               ),
-                                    //             ),
-                                    //           ),
-                                    //         ])),
-                                    // RichText(
-                                    //     textAlign: TextAlign.end,
-                                    //     text: TextSpan(
-                                    //         style: TextStyle(
-                                    //           color: Colors.black87,
-                                    //         ),
-                                    //         children: [
-                                    //           TextSpan(
-                                    //               text: 'DEF',
-                                    //               style: TextStyle(
-                                    //                   color: fire,
-                                    //                   fontWeight: FontWeight.bold)),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           TextSpan(text: "078 "),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           WidgetSpan(
-                                    //             child: Container(
-                                    //               margin: const EdgeInsets.symmetric(
-                                    //                 vertical: 5,
-                                    //               ),
-                                    //               width: 201,
-                                    //               child: LinearProgressBar(
-                                    //                 maxSteps: 255,
-                                    //                 progressType: LinearProgressBar
-                                    //                     .progressTypeLinear,
-                                    //                 // Use Linear progress
-                                    //                 currentStep: 78,
-                                    //                 progressColor: fire,
-                                    //                 backgroundColor: Colors.grey,
-                                    //               ),
-                                    //             ),
-                                    //           ),
-                                    //         ])),
-                                    // RichText(
-                                    //     textAlign: TextAlign.start,
-                                    //     text: TextSpan(
-                                    //         style: TextStyle(
-                                    //           color: Colors.black87,
-                                    //         ),
-                                    //         children: [
-                                    //           TextSpan(
-                                    //               text: 'HP',
-                                    //               style: TextStyle(
-                                    //                   color: fire,
-                                    //                   fontWeight: FontWeight.bold)),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           TextSpan(text: "078 "),
-                                    //           WidgetSpan(child: VerticalDivider()),
-                                    //           WidgetSpan(
-                                    //             child: Container(
-                                    //               margin: const EdgeInsets.symmetric(
-                                    //                 vertical: 5,
-                                    //               ),
-                                    //               width: 201,
-                                    //               child: LinearProgressBar(
-                                    //                 maxSteps: 255,
-                                    //                 progressType: LinearProgressBar
-                                    //                     .progressTypeLinear,
-                                    //                 // Use Linear progress
-                                    //                 currentStep: 78,
-                                    //                 progressColor: fire,
-                                    //                 backgroundColor: Colors.grey,
-                                    //               ),
-                                    //             ),
-                                    //           ),
-                                    //         ])),
                                   ],
                                 ),
                               ],
                             ),
                           )),
                       Positioned(
-                        top: 0,
+                        top: -10,
                         right: 0,
                         left: 0,
                         child: CachedNetworkImage(
                           imageUrl:
                               "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${pokeid}.png",
-                          // "${item
-                          // ?.url
-                          // ?.split("pokemon")
-                          // .last
-                          // .replaceAll("/", "")}.png",
                           placeholder: (context, url) =>
                               Lottie.asset("assets/pokeball_lottie.json"),
                           errorWidget: (context, url, error) =>
                               const Icon(Icons.error),
-                          height: 190,
+                          height: 170,
                         ),
                       ),
                     ],
