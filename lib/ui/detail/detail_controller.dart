@@ -45,7 +45,6 @@ class DetailController extends GetxController {
       for (var element in (res.flavorTextEntries as List<dynamic>)) {
         pokemonDescription.add(element);
       }
-      print(pokemonDescription[0].flavorText);
       update();
     } catch (e) {
       update();

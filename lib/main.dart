@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Infinite Scroll - Lazy Loading',
       theme: ThemeData(
         useMaterial3: true,

@@ -7,7 +7,7 @@ import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 class MainController extends GetxController{
   final repository = Get.find<Repository>();
 
-  static const limit = 10;
+  static const limit = 9;
 
   final PagingController<int, Results> pagingController =
   PagingController(firstPageKey: 0);

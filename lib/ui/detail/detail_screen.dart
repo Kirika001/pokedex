@@ -58,7 +58,7 @@ class DetailScreen extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                          bottom: 20,
+                          bottom: 25,
                           right: 0,
                           left: 0,
                           child: Container(
@@ -99,7 +99,7 @@ class DetailScreen extends StatelessWidget {
                                                       : Colors.white,
                                                   borderRadius:
                                                       BorderRadius.circular(5)),
-                                              child: Text(e.type?.name ?? '')))
+                                              child: Text(e.type?.name?.capitalizeFirst ?? '')))
                                           .toList(),
                                     ),
                                     Container(
@@ -167,10 +167,10 @@ class DetailScreen extends StatelessWidget {
                                                       "\n${controller.pokemonDescription[0].flavorText?.getPokemonDescription()}"),
                                               TextSpan(
                                                   text:
-                                                      " ${controller.pokemonDescription[2].flavorText?.getPokemonDescription()}"),
+                                                      " ${controller.pokemonDescription[1].flavorText?.getPokemonDescription()}"),
                                               TextSpan(
                                                   text:
-                                                      " ${controller.pokemonDescription[3].flavorText?.getPokemonDescription()}")
+                                                      " ${controller.pokemonDescription[2].flavorText?.getPokemonDescription()}")
                                             ])),
                                     Container(
                                         margin: const EdgeInsets.all(15),
