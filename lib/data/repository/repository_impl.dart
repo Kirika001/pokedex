@@ -28,7 +28,7 @@ class RepositoryImpl implements Repository {
   @override
   FutureOr<PokemonDescriptionModel> getPokemonDescription(int id) async {
     try {
-      var response = await network.dio.get("/pokemon/$id");
+      var response = await network.dio.get("/pokemon-species/$id");
       return PokemonDescriptionModel.fromJson(response.data);
     } on DioError catch (e) {
       print(e.error);
@@ -39,7 +39,7 @@ class RepositoryImpl implements Repository {
   @override
   FutureOr<PokemonDetailModel> getPokemonDetail(int id) async {
     try {
-      var response = await network.dio.get("//pokemon-species/$id");
+      var response = await network.dio.get("/pokemon/$id");
       return PokemonDetailModel.fromJson(response.data);
     } on DioError catch (e) {
       print(e.error);
